@@ -1,0 +1,31 @@
+// Masthead 
+// -----------------------------------------------
+// -----------------------------------------------
+#masthead {
+    .masthead-content {
+        padding: ($base-point-grid * 11) 0  ($base-point-grid * 8) 0;
+        @include flexbox;
+        @include align-items (center);
+        .masthead-text {
+            @include flex(1);
+            //background: rgba(#456, 0.4);
+            h1 {
+                margin-bottom: ($base-point-grid * 3);
+                font-size: 1.5rem;
+                font-weight: $font-bold;
+                text-transform: uppercase;
+                color: $brand-primary;                
+            }
+            
+            h2 {
+                margin-bottom: ($base-point-grid * 5);
+                font-size: 3.062rem;
+            }
+      
+        }
+        .masthead-brand {
+            @include flex(1);
+            //background: rgba(#321, 0.2);
+        }
+    }
+}

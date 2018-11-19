@@ -1,0 +1,12 @@
+content:
+    - title: Purely functional
+      description: Lorem ip amet, consectetur adipiscing elit. Nullam blandit odio nec button amet, consectetur adip.
+      icon: /img/higherkindness-feature-icon-primary.svg
+
+    - title: Modulable
+      description: Lorem ip amet, consectetur adipiscing elit. Nullam blandit odio nec button amet, consectetur adip.
+      icon: /img/higherkindness-feature-icon-secondary.svg
+
+    - title: Safety
+      description: Lorem ip amet, consectetur adipiscing elit. Nullam blandit odio nec button amet, consectetur adip.
+      icon: /img/higherkindness-feature-icon-tertiary.svg
