@@ -36,6 +36,12 @@
         @include flex-wrap(wrap);
         .feature-item {
             @include flex(0 0 100%);
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                padding: 0;
+            }
+            margin-bottom: ($base-point-grid * 5);
             padding: 0;
         }
     }
