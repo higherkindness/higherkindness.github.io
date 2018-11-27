@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {% include _head.html %}
+    <body>
+    <svg id="fader"></svg>
+    <script>
+    (function fadeInPage() {
+      var fader = document.getElementById('fader');
+      fader.classList.add('fade-out');
+    })();
+    </script>
+    {% include _header.html %}
+    {% include _main.html %}
+    </body>
+</html>
