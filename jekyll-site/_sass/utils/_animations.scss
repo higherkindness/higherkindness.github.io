@@ -1,0 +1,65 @@
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: rgb(32, 9, 107);
+}
+
+@mixin generate-fade($name, $start-position, $end-position) {
+    animation-name: $name;
+    @at-root {
+        @keyframes #{$name} {
+            from { opacity: $start-position }
+            to { opacity: $end-position }
+        }
+    }
+}
+
+#fader.fade-out {
+    @include generate-fade('fade-out', 1, 0);
+    opacity: 0;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+}
+
+
+[class^='planet'] {
+    @include generate-fade('fade-planet', 'inherit', 0.1);
+    animation-direction: alternate;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+[id^='inner-orbit'] {
+    @include generate-fade('fade-orbit', 'inherit', 0.2);
+    animation-direction: alternate;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+[id^='inner-ring'] {
+    @include generate-fade('fade-ring', 'inherit', 0);
+    animation-direction: alternate;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@for $i from 1 through 5 {
+  .planet-#{$i} {
+    animation-delay: 500ms * $i
+  }
+  #inner-orbit-#{$i} {
+    animation-delay: 500ms * $i
+  }
+  #inner-ring-#{$i} {
+    animation-delay: 500ms * $i
+  }
+}
