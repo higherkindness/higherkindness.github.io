@@ -1,4 +1,4 @@
-// Content 
+// Content
 // -----------------------------------------------
 // -----------------------------------------------
 .features {
@@ -20,6 +20,10 @@
         text-align: center;
         img {
             margin-bottom: ($base-point-grid * 3);
+            transition: transform 150ms ease-in-out;
+            &:hover {
+              transform: scale(1.5);
+            }
         }
         h3 {
             margin-bottom: $base-point-grid;
