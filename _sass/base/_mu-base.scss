@@ -23,10 +23,7 @@ html {
 // -----------------------------------------------
 body {
     color: $white;
-    background-color: $gray-primary;
-    background-image: url("../img/higherkindness-pattern-top.svg"), url("../img/higherkindness-pattern-left.svg");
-    background-position: right top, left top;
-    background-repeat: repeat-x, no-repeat;
+    background: rgba($brand-secondary, 0.04);
     font-family: $base-font-family;
     line-height: $base-line-height;
 }
