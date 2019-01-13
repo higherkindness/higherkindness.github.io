@@ -1,6 +1,6 @@
 content:
     - title: HTTP
-      description: REST based microservices, where server-side data are made available through representations of data in JSON.
+      description: REST based microservices, where server-side data are made available through representations of data, typically in JSON or XML format.
       icon: /img/mu-feature-icon-primary.svg
 
     - title: RPC
