@@ -1,12 +1,12 @@
 content:
     - title: HTTP
-      description: Lorem ip amet, consectetur adipiscing elit. Nullam blandit odio nec button amet, consectetur adip.
+      description: REST based microservices, where server-side data are made available through representations of data in JSON.
       icon: /img/mu-feature-icon-primary.svg
 
     - title: RPC
-      description: Lorem ip amet, consectetur adipiscing elit. Nullam blandit odio nec button amet, consectetur adip.
+      description: For constructing distributed, client-server, and typed based applications, atop of grpc.
       icon: /img/mu-feature-icon-secondary.svg
 
     - title: Metrics
-      description: Lorem ip amet, consectetur adipiscing elit. Nullam blandit odio nec button amet, consectetur adip.
+      description: Instrumentation reporting integrations for JVM applications, supported by Prometheus and Dropwizard's Metrics.
       icon: /img/mu-feature-icon-tertiary.svg
