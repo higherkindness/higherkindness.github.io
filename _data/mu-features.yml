@@ -8,5 +8,5 @@ content:
       icon: /img/mu-feature-icon-secondary.svg
 
     - title: Metrics
-      description: Instrumentation reporting integrations for JVM applications, supported by Prometheus and Dropwizard's Metrics.
+      description: Instrumentation and reporting integrations, supported by Prometheus and Dropwizard metrics.
       icon: /img/mu-feature-icon-tertiary.svg
