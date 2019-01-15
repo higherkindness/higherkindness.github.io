@@ -4,7 +4,7 @@ content:
       icon: /img/mu-feature-icon-primary.svg
 
     - title: RPC
-      description: For constructing distributed, client-server, and typed based applications, atop of grpc.
+      description: For constructing distributed, client-server, typed applications on top of grpc.
       icon: /img/mu-feature-icon-secondary.svg
 
     - title: Metrics
