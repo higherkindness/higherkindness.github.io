@@ -1,10 +1,10 @@
 content:
     - title: Purely functional
-      description: Functional programs and libraries targeted to improve parallel computations, eager evaluation, and the use purely data structures.
+      description: Functional programs and libraries targeted to improve parallel computations, eager evaluation, and the use of pure data structures.
       icon: /img/higherkindness-feature-icon-primary.svg
 
     - title: Modulable
-      description: Combining simple libraries to build more complicated ones.
+      description: Combining simple libraries to build more complex ones.
       icon: /img/higherkindness-feature-icon-secondary.svg
 
     - title: Safety
