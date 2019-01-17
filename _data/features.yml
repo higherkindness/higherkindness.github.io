@@ -8,5 +8,5 @@ content:
       icon: /img/higherkindness-feature-icon-secondary.svg
 
     - title: Safety
-      description: Preserving the referential transparency and type safety.
+      description: Preserving referential transparency and type safety.
       icon: /img/higherkindness-feature-icon-tertiary.svg
