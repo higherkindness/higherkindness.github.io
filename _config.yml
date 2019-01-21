@@ -8,7 +8,7 @@ mu-title: Mu
 #-------------------------
 mu-name: Mu
 #-------------------------
-mu-description: Mu is a purely functional library for building micro services.
+mu-description: Mu is a purely functional library for building microservices.
 #-------------------------
 author: 47 Degrees
 keywords: functional-programming, kotlin-library, monads, monad-transformers, functional-data-structure, kotlin, fp-types, adt, free-monads, tagless-final, mtl, for-comprehension, category-theory
