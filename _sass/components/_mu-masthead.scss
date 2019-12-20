@@ -1,4 +1,4 @@
-// Masthead 
+// Masthead
 // -----------------------------------------------
 // -----------------------------------------------
 #masthead {
@@ -10,7 +10,7 @@
         .masthead-text {
             @include flex(1); //background: rgba(#456, 0.4);
             h2 {
-                margin-bottom: ($base-point-grid * 5);
+                margin-bottom: ($base-point-grid * 3);
                 font-size: 2.533rem;
             }
 

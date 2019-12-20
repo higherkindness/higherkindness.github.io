@@ -1,14 +1,16 @@
-// Buttons 
+// Buttons
 // -----------------------------------------------
 // -----------------------------------------------
 .button {
-    display: inline-block;
+    display: block;
     font-weight: $font-semibold;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     background: none;
     color: $white;
     border: 2px solid rgba($white, 0.7);
+    margin: 8px 0;
     transition: background $base-duration $base-timing;
 
     &:visited {
@@ -27,4 +29,4 @@
         padding: ($base-point-grid * 1.2) ($base-point-grid * 3);
         font-size: .875rem;
     }
-} 
+}
