@@ -1,4 +1,4 @@
 ---
 layout: coming-soon
-permalink: mu-kotlin
+permalink: mu-kotlin/
 ---
