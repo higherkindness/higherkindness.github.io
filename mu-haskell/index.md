@@ -1,4 +1,4 @@
 ---
 layout: coming-soon
-permalink: mu-haskell
+permalink: mu-haskell/
 ---
