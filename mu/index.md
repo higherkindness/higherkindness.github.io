@@ -1,3 +1,4 @@
 ---
 layout: mu
+permalink: mu
 ---
