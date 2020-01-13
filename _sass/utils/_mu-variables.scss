@@ -3,24 +3,24 @@
 // -----------------------------------------------
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 
 // Colors
-$brand-primary: rgb(18, 203, 196);
-$brand-secondary: rgb(18, 137, 167);
-$gray-primary: darken($brand-secondary, 10%);
-$gray-secondary: darken($brand-secondary, 5%);
+$brand-primary: #001E38;
+$brand-secondary: #001E38;
+$gray-primary: $brand-primary;
+$gray-secondary: $brand-primary;
 $white: rgb(255, 255, 255);
-$link-color: $brand-primary;
+$link-color: lighten($brand-primary, 20%);
 $link-hover: darken($brand-primary, 4%);
 
 // Typography
-$base-font-family: 'Titillium Web', sans-serif;
+$base-font-family: 'Montserrat', sans-serif;
 $header-font-family: $base-font-family;
 $base-font-color: $gray-secondary;
 $header-font-color: $gray-primary;
 $font-regular: 400;
-$font-medium: 300;
+$font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
 $base-font-size: 15px;
