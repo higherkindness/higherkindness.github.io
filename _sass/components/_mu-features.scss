@@ -6,7 +6,6 @@
 
     .container-title {
       margin: 0 0 ($base-point-grid * 8) 0;
-      background: red;
 
       h2 {
           text-align: center;
@@ -17,7 +16,6 @@
     }
 
     .features {
-        background: blue;
         margin: 0 0 ($base-point-grid * 10) 0;
         @include flexbox;
         .feature-item {
