@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-rpc</title>
+    <g id="icon-rpc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="path" fill="#001E38" points="13 13 17 13 17 9 13 9"></polygon>
+        <polygon id="path" fill="#001E38" points="20 13 24 13 24 9 20 9"></polygon>
+        <polygon id="path" fill="#001E38" points="27 13 31 13 31 9 27 9"></polygon>
+        <polygon id="path" fill="#001E38" points="9 31 13 31 13 27 9 27"></polygon>
+        <polygon id="path" fill="#001E38" points="16 31 20 31 20 27 16 27"></polygon>
+        <polygon id="path" fill="#001E38" points="23 31 27 31 27 27 23 27"></polygon>
+        <polygon id="path" fill="#0495D7" points="5.1786 2.0002 -0.000400000001 10.9692 5.1806 19.9432 10.3626 19.9402 5.1786 10.9692 10.3626 2.0002"></polygon>
+        <polygon id="path" fill="#0495D7" points="29.6379 20.0605 34.8209 29.0295 29.6379 38.0005 34.8209 38.0005 39.9999 29.0295 34.8189 20.0565"></polygon>
+    </g>
+</svg>

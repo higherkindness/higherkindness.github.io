@@ -1,12 +1,12 @@
 content:
     - title: HTTP
       description: REST-based typed microservices with auto-derived client and server implementations.
-      icon: img/mu-feature-icon-primary.svg
+      icon: img/icon-http.svg
 
     - title: RPC
       description: For constructing distributed, client-server, typed applications on top of grpc.
-      icon: img/mu-feature-icon-secondary.svg
+      icon: img/icon-rpc.svg
 
     - title: Metrics
       description: Instrumentation and reporting integrations, supported by Prometheus and Dropwizard metrics.
-      icon: img/mu-feature-icon-tertiary.svg
+      icon: img/icon-metrics.svg
