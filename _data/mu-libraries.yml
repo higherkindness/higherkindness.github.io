@@ -1,0 +1,15 @@
+content:
+    - name: Mu-Scala
+      description: Mu provides the ability to combine RPC protocols, services, and clients in your Scala program, thanks to gRPC.
+      icon: img/mu-scala.svg
+      colour: "#F44336"
+
+    - name: Mu-Kotlin
+      description: Mu-Kotlin is an incoming purely functional library for building microservices in Kotlin.
+      icon: img/mu-kotlin.svg
+      colour: "#0495D7"
+
+    - name: Mu-Haskell
+      description: A set of packages that helps you build both servers and clients for microservices, allowing you to focus on your domain logic.
+      icon: img/mu-haskell.svg
+      colour: "#9E358F"

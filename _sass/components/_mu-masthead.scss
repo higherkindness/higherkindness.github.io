@@ -2,19 +2,19 @@
 // -----------------------------------------------
 // -----------------------------------------------
 #masthead {
-  background: $brand-secondary;
-
   .masthead-content {
     padding: ($base-point-grid * 10) 0 ($base-point-grid * 12) 0;
+    text-align: center;
     @include flexbox;
+    flex-direction: column;
     @include align-items(center);
     .masthead-text {
       @include flex(1);
       h2 {
         color: $white;
-        margin-bottom: ($base-point-grid * 3);
-        font-size: 2.533rem;
-        font-weight: 600;
+        margin-bottom: ($base-point-grid * 12);
+        font-size: 3rem;
+        font-weight: $font-bold;
       }
 
       a {
@@ -34,6 +34,64 @@
       }
     }
   }
+
+  .masthead-link-container {
+    display: grid;
+    grid-gap: ($base-point-grid * 3);
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .library-container {
+      display: flex;
+      flex-direction: column;
+      min-width: 30%;
+    }
+  }
+
+  .library-icon {
+    flex: 1 1 25%;
+    margin: 0 auto ($base-point-grid * 3);
+    max-width: 50%;
+  }
+
+  .card {
+    flex: 1 1 220px;
+    max-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: $white;
+    padding: ($base-point-grid * 2) ($base-point-grid * 2);
+    transition: background $base-duration $base-timing;
+
+    &:visited {
+        color: $white;
+    }
+    &:hover {
+        color: $gray-primary;
+        // Sadly attr() support is sparse, sorry
+        background: $white !important;
+        text-decoration: none;
+    }
+    &:active {
+        background: $white;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: $font-semibold;
+    }
+
+    .card-content {
+      max-height: 150px;
+      overflow: hidden;
+    }
+
+    .card-cta {
+      text-transform: uppercase;
+    }
+  }
 }
 
 // Responsive mode
@@ -48,7 +106,6 @@
       }
 
       .masthead-text {
-        @include order(2);
         text-align: center;
         h2 {
           font-size: 1.8rem;
