@@ -3,9 +3,13 @@
 // -----------------------------------------------
 
 #footer {
+    @include fadeIn(
+    $duration: 0.8s,
+    $delay: 0.6s,
+    $function: ease);
+
     padding: ($base-point-grid * 6) /*48px*/ 0;
     font-size: 0.875rem;
-    //background: darken($brand-secondary, 6%);
     p {
         color: $brand-secondary;
     }

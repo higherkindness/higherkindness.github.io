@@ -44,6 +44,27 @@
       display: flex;
       flex-direction: column;
       min-width: 30%;
+
+      &:nth-child(1) {
+          @include fadeIn(
+          $duration: 0.8s,
+          $delay: 0.6s,
+          $function: ease);
+      }
+
+       &:nth-child(2) {
+          @include fadeIn(
+          $duration: 0.8s,
+          $delay: 0.9s,
+          $function: ease);
+      }
+
+       &:nth-child(3) {
+          @include fadeIn(
+          $duration: 0.8s,
+          $delay: 1.1s,
+          $function: ease);
+      }
     }
   }
 
@@ -63,15 +84,13 @@
     font-size: 0.9rem;
     color: $white;
     padding: ($base-point-grid * 2) ($base-point-grid * 2);
-    transition: background $base-duration $base-timing;
+    transition: box-shadow 150ms $base-timing;
 
     &:visited {
         color: $white;
     }
     &:hover {
-        color: $gray-primary;
-        // Sadly attr() support is sparse, sorry
-        background: $white !important;
+        box-shadow: inset 0 0 35px 110px rgba(0, 0, 0, 0.3);
         text-decoration: none;
     }
     &:active {
@@ -81,6 +100,7 @@
     .card-title {
       font-size: 1.3rem;
       font-weight: $font-semibold;
+      margin-bottom: $base-point-grid;
     }
 
     .card-content {
