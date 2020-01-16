@@ -4,6 +4,7 @@
 #content {
     .container-title {
       margin: 0 0 ($base-point-grid * 8) 0;
+      text-align: center;
 
       h2 {
           @include fadeIn(
@@ -11,7 +12,8 @@
           $delay: 0.6s,
           $function: ease);
 
-          text-align: center;
+          background: rgba(255, 255, 255, .7);
+          display: inline;
           font-size: 1.6rem;
           font-weight: $font-semibold;
           color: $gray-primary;

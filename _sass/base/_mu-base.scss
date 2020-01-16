@@ -19,12 +19,15 @@ html {
     height: 100%;
 }
 
-// Typography
 // -----------------------------------------------
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: $gray-primary;
     background: $white;
     background-image: linear-gradient(150deg, $brand-secondary 45.5%, transparent 45.6%);
+    background-size: 120% 1400px;
     background-repeat: no-repeat;
     font-family: $base-font-family;
     line-height: $base-line-height;
