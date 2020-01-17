@@ -3,13 +3,23 @@ content:
       description: Mu provides the ability to combine RPC protocols, services, and clients in your Scala program, thanks to gRPC.
       icon: img/mu-scala.svg
       colour: "#F44336"
+      links:
+        website: https://higherkindness.io/mu-scala
+        repository: https://github.com/higherkindness/mu-scala
 
     - name: Mu-Kotlin
       description: Mu-Kotlin is an incoming purely functional library for building microservices in Kotlin.
       icon: img/mu-kotlin.svg
       colour: "#0495D7"
+      links:
+        website: https://higherkindness.io/mu-kotlin
+        repository: https://github.com/higherkindness/mu-kotlin
 
     - name: Mu-Haskell
       description: A set of packages that helps you build both servers and clients for microservices, allowing you to focus on your domain logic.
       icon: img/mu-haskell.svg
       colour: "#9E358F"
+      links:
+        site: https://higherkindness.io/mu-scala
+        api: https://higherkindness.io/mu-haskell/haddock
+        repository: https://github.com/higherkindness/mu-scala
