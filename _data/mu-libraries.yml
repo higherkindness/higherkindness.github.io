@@ -20,6 +20,6 @@ content:
       icon: img/mu-haskell.svg
       colour: "#9E358F"
       links:
-        site: https://higherkindness.io/mu-scala
+        website: https://higherkindness.io/mu-scala
         api: https://higherkindness.io/mu-haskell/haddock
         repository: https://github.com/higherkindness/mu-scala
