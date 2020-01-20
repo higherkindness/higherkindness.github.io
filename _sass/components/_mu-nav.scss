@@ -37,4 +37,9 @@
         color: $white
     }
   }
+
+  .nav-link-container {
+    display: flex;
+    margin-right: -($base-point-grid * 2);
+  }
 }

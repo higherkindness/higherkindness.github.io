@@ -12,7 +12,7 @@
     <ul class="dropdown dropdown-content">
       {% for link in include.item.links %}
       <li class="dropdown-item">
-        <a class="dropdown-item-link" href="/{{ link[1] }}">
+        <a class="dropdown-item-link" title="{{ link[0] | capitalize }}" href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">
             <span>
               {{ link[0] | capitalize }}
             </span>
