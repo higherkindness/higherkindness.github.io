@@ -17,7 +17,6 @@ div[id$='-dropdown'] {
   .dropdown-content {
     font-size: 0.8rem;
     position: absolute;
-    min-width: 145px;
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -26,6 +25,8 @@ div[id$='-dropdown'] {
     transform: rotate3d(1, 0, 0, 90deg);
     transition: transform ease 250ms, opacity ease 100ms;
     transform-origin: top;
+    margin-top: 6px;
+    text-align: center;
 
     .dropdown-item {
       width: 100%;
