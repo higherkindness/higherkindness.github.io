@@ -2,53 +2,53 @@
 // -----------------------------------------------
 // -----------------------------------------------
 @mixin flexbox() {
-    display: flex;
+  display: flex;
 }
 
 @mixin flex($values) {
-    flex: $values;
+  flex: $values;
 }
 
 @mixin flex-direction($direction) {
-    flex-direction: $direction;
+  flex-direction: $direction;
 }
 
 @mixin flex-wrap($wrap) {
-    flex-wrap: $wrap;
+  flex-wrap: $wrap;
 }
 
 @mixin flex-flow($flow) {
-    flex-flow: $flow;
+  flex-flow: $flow;
 }
 
 @mixin order($val) {
-    order: $val;
+  order: $val;
 }
 
 @mixin flex-grow($grow) {
-    flex-grow: $grow;
+  flex-grow: $grow;
 }
 
 @mixin flex-shrink($shrink) {
-    flex-shrink: $shrink;
+  flex-shrink: $shrink;
 }
 
 @mixin flex-basis($width) {
-    flex-basis: $width;
+  flex-basis: $width;
 }
 
 @mixin justify-content($justify) {
-    justify-content: $justify;
+  justify-content: $justify;
 }
 
 @mixin align-content($align) {
-    align-content: $align;
+  align-content: $align;
 }
 
 @mixin align-items($align) {
-    align-items: $align;
+  align-items: $align;
 }
 
 @mixin align-self($align) {
-    align-self: $align;
+  align-self: $align;
 }

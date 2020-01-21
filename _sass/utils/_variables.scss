@@ -3,7 +3,7 @@
 // -----------------------------------------------
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 
 // Colors
 $brand-primary: rgb(67, 218, 222);
@@ -14,7 +14,7 @@ $link-color: darken($brand-primary, 10%);
 $link-hover: darken($brand-primary, 15%);
 
 // Typography
-$base-font-family: 'Montserrat', sans-serif;
+$base-font-family: "Montserrat", sans-serif;
 $header-font-family: $base-font-family;
 $base-font-color: $gray-secondary;
 $header-font-color: $gray-primary;
@@ -41,7 +41,7 @@ $border-color: rgba($gray-primary, 0.1);
 // Grid
 
 // Utils
-$max-width: 960px;  
-$column-width: 6.38298%;  
-$gutter-width: 2.12766%;  
+$max-width: 960px;
+$column-width: 6.38298%;
+$gutter-width: 2.12766%;
 $maximum-columns: 12;

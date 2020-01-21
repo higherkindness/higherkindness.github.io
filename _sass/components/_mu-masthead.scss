@@ -8,11 +8,16 @@
     min-height: 600px;
     padding: ($base-point-grid * 6) 0 ($base-point-grid * 12) 0;
     text-align: center;
+
     @include flexbox;
+
     flex-direction: column;
+
     @include align-items(center);
+
     .masthead-text {
       @include flex(1);
+
       padding: 0 ($base-point-grid * 4);
 
       h2 {
@@ -28,8 +33,10 @@
 
       @include fadeInDown($duration: 1s, $delay: 0.2s, $function: ease);
     }
+
     .masthead-brand {
       @include flex(1);
+
       max-width: 100%;
 
       @include fadeInDown($duration: 1s, $delay: 0.6s, $function: ease);
@@ -85,10 +92,12 @@
     &:visited {
       color: $white;
     }
+
     &:hover {
       box-shadow: inset 0 0 35px 110px rgba(0, 0, 0, 0.2);
       text-decoration: none;
     }
+
     &:active {
       background: $white;
     }
@@ -136,7 +145,9 @@
   #masthead {
     .masthead-content {
       @include flex-wrap(wrap);
+
       padding: ($base-point-grid * 8) 0;
+
       .masthead-text,
       .masthead-brand {
         @include flex(0 0 100%);
@@ -150,7 +161,9 @@
 
       .masthead-brand {
         @include order(1);
+
         text-align: center;
+
         img {
           margin-bottom: ($base-point-grid * 4);
           width: 100%;
