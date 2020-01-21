@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-left</title>
+    <g id="arrow-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="arrow" fill="#FFFFFF" transform="translate(7.000000, 6.500000) rotate(-90.000000) translate(-7.000000, -6.500000) " points="1.5 3.5 1.50034371 6.5 7 9.5 12.5 6.5 12.5 6.12589305 12.4979378 3.50811864 6.99965629 6.5"></polygon>
+    </g>
+</svg>
