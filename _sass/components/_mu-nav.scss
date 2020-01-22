@@ -42,6 +42,7 @@
 
   .nav-link-container {
     display: flex;
+    margin-top: ($base-point-grid / 2);
     margin-right: -($base-point-grid * 2);
   }
 }

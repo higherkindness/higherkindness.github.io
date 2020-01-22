@@ -19,6 +19,7 @@
   z-index: 1;
 
   &.link-like {
+    font-size: 0.9rem;
     font-weight: $font-regular;
     border: none;
     padding: 0 0 ($base-point-grid / 2) 0;
@@ -37,8 +38,15 @@
       position: absolute;
       left: 0;
       top: 0;
+      height: 150%;
       width: 100%;
       visibility: visible;
+      background-image: url("../img/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position-x: 99%;
+      background-position-y: 25%;
+      background-size: 0.8em;
+      transition: background-position 0.1s ease;
     }
 
     &:hover,
@@ -48,6 +56,10 @@
       box-shadow: 0 2px;
       background: none;
       visibility: visible;
+
+      &::after {
+        background-position-y: 60%;
+      }
     }
   }
 
