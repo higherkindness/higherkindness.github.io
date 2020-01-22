@@ -66,4 +66,9 @@ hr {
   max-width: 980px;
   padding: 0 ($base-point-grid * 6);
   margin: 0 auto;
+
+  // Responsive mode
+  @include bp(small) {
+    padding: 0 $base-point-grid;
+  }
 }
