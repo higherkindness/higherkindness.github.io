@@ -146,17 +146,10 @@
   #masthead {
     .masthead-link-container {
       grid-template-columns: 1fr;
-
-      .library-container {
-        flex-direction: row;
-      }
-    }
-
-    .library-icon {
-      display: none;
     }
 
     .card {
+      flex: 1 1 150px;
       min-height: 150px;
     }
   }
