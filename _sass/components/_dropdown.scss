@@ -8,7 +8,7 @@ div[id$='-dropdown'] {
 
     a {
       &:hover {
-        background: darken($brand-primary, 4%);
+        background: lighten($brand-primary, 10%);
       }
     }
   }
@@ -20,7 +20,7 @@ div[id$='-dropdown'] {
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
-    background: rgba($brand-primary, 0.95);
+    background: lighten($brand-primary, 5%);
     opacity: 0.5;
     transform: rotate3d(1, 0, 0, 90deg);
     transition: transform ease 250ms, opacity ease 100ms;
