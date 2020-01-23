@@ -2,7 +2,7 @@
 // -----------------------------------------------
 // -----------------------------------------------
 .features {
-  @include flexbox;
+  display: flex;
 
   .feature-item {
     &:nth-child(1),
@@ -18,8 +18,7 @@
       padding-left: ($base-point-grid * 3);
     }
 
-    @include flex(1);
-
+    flex: 1;
     text-align: center;
 
     img {
@@ -43,10 +42,10 @@
 // Responsive mode
 @include bp(small) {
   .features {
-    @include flex-wrap(wrap);
+    flex-wrap: wrap;
 
     .feature-item {
-      @include flex(0 0 100%);
+      flex: 0 0 100%;
 
       &:nth-child(1),
       &:nth-child(2),

@@ -19,8 +19,7 @@
 
   .features {
     margin: 0 0 ($base-point-grid * 10) 0;
-
-    @include flexbox;
+    display: flex;
 
     .feature-item {
       img {
@@ -55,8 +54,7 @@
         @include fadeInDown($duration: 1s, $delay: 1.6s, $function: ease);
       }
 
-      @include flex(1);
-
+      flex: 1;
       text-align: center;
 
       h3 {
@@ -78,10 +76,10 @@
 @include bp(medium) {
   #content {
     .features {
-      @include flex-wrap(wrap);
+      flex-wrap: wrap;
 
       .feature-item {
-        @include flex(0 0 100%);
+        flex: 0 0 100%;
 
         &:nth-child(1),
         &:nth-child(2),
