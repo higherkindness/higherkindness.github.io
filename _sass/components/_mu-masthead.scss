@@ -72,14 +72,14 @@
   }
 
   .library-icon {
-    flex: 1 1 25%;
-    margin: 0 auto ($base-point-grid * 3);
-    max-width: 50%;
+    flex: 1 1 auto;
+    margin: 0 0 ($base-point-grid * 3);
+    height: 180px;
+    width: auto;
   }
 
   .card {
-    flex: 1 1 220px;
-    max-height: 220px;
+    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,13 +115,9 @@
       margin-bottom: $base-point-grid;
     }
 
-    .card-content {
-      max-height: 150px;
-      overflow: hidden;
-    }
-
     .card-cta {
       font-weight: $font-semibold;
+      margin-top: ($base-point-grid * 2);
       text-transform: uppercase;
       position: relative;
 
@@ -148,8 +144,11 @@
       grid-template-columns: 1fr;
     }
 
+    .library-icon {
+      height: 150px;
+    }
+
     .card {
-      flex: 1 1 150px;
       min-height: 150px;
     }
   }
