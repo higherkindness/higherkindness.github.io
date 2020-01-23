@@ -7,7 +7,7 @@
             <div class="masthead-link-container">
               {% for item in site.data.mu-libraries.content %}
               <div class="library-container">
-                <img class="library-icon" src="{{ item.icon | relative_url }}" alt="{{ item.title }}" title="{{ item.title }}" />
+                  <img class="library-icon" src="{{ item.icon | relative_url }}" alt="{{ item.name }}" title="{{ item.name }}" />
                 <a class="card" style="background:{{ item.colour }}" href="{{ item.name | downcase | relative_url }}">
                   <div class="card-content">
                     <h3 class="card-title">{{ item.name }}</h3>
