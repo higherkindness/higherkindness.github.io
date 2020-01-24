@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-metrics</title>
+    <g id="icon-metrics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="path" fill="#9E358F" points="4 33 9 33 9 22 4 22"></polygon>
+        <polygon id="path" fill="#001E38" points="13 33 18 33 18 11 13 11"></polygon>
+        <polygon id="path" fill="#9E358F" points="22 33 27 33 27 15 22 15"></polygon>
+        <polygon id="path" fill="#9E358F" points="31 33 37 33 37 6 31 6"></polygon>
+    </g>
+</svg>

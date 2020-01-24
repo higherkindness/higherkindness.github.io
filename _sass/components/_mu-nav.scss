@@ -1,0 +1,48 @@
+// Masthead
+// -----------------------------------------------
+// -----------------------------------------------
+
+.navigation {
+  background: #{$brand-secondary}CC; //Nice! 👌
+  color: $white;
+  height: $navbar-height;
+  position: fixed;
+  padding: ($base-point-grid * 2) 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-title {
+    font-size: 1.4rem;
+    font-weight: $font-bold;
+    color: $white;
+    text-decoration: none;
+    transition: opacity $base-duration $base-timing;
+
+    &:visited {
+      color: $white;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: $white;
+    }
+  }
+
+  .nav-link-container {
+    display: flex;
+    margin-top: ($base-point-grid / 2);
+    margin-right: -($base-point-grid * 2);
+  }
+}

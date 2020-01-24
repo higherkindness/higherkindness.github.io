@@ -1,0 +1,12 @@
+<nav class="navigation">
+  <div class="container">
+    <a class="nav-title" href="{{ '/mu' | relative_url }}">
+      Mu
+    </a>
+    <div class="nav-link-container">
+      {% for item in site.data.mu-libraries.content %}
+      {% include _dropdown.html item=item %}
+      {% endfor %}
+    </div>
+  </div>
+</nav>

@@ -5,10 +5,10 @@
     <meta name="description" content="{{site.mu-description}}">
     <meta name="keywords" content="{{site.keywords}}">
 
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="{{ 'img/mu-poster.png' | relative_url }}" />
     <meta property="og:title" content="{{site.mu-name}}" />
     <meta property="og:site_name" content="{{site.mu-name}}" />
-    <meta property="og:url" content="https://higherkindness.io/" />
+    <meta property="og:url" content="https://higherkindness.io/mu" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="{{site.mu-description}}" />
     <meta property="og:keywords" content="{{site.keywords}}" />
@@ -17,11 +17,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@47deg">
     <meta name="twitter:creator" content="@47deg">
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="{{ 'img/mu-poster.png' | relative_url }}" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ 'img/mu-favicon.png' | relative_url }}">
 
     <!-- Mu main css -->
     <link rel="stylesheet" type="text/css" href="{{ 'css/mu-styles.css' | relative_url }}">
+
+    <!-- Code to manage dropdowns -->
+    <script defer src="{{ 'js/dropdown.js' | relative_url }}"></script>
 </head>

@@ -2,31 +2,83 @@
 // -----------------------------------------------
 // -----------------------------------------------
 .button {
-    display: block;
-    font-weight: $font-semibold;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: none;
+  cursor: pointer;
+  display: block;
+  font-family: $base-font-family;
+  font-weight: $font-semibold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: $white;
+  border: 2px solid rgba($white, 0.7);
+  margin: 8px 0;
+  transition: background $base-duration $base-timing;
+  outline: none;
+  padding: ($base-point-grid / 2) ($base-point-grid * 2);
+  z-index: 1;
+
+  &.link-like {
+    font-size: 0.9rem;
+    font-weight: $font-regular;
+    border: none;
+    padding: 0 0 ($base-point-grid / 2) 0;
+    margin: 0 ($base-point-grid * 2) (-$base-point-grid / 2) ($base-point-grid * 2);
+    text-transform: none;
+    visibility: hidden;
+
+    &::after {
+      content: attr(title);
+      color: $white;
+      text-shadow:
+        0 0 0.1px rgba(0, 0, 0, 0.5),
+        0 0 0.3px rgba(255, 255, 255, 0.6),
+        0 0 0.4px rgba(255, 255, 255, 0.3),
+        0 0 0.6px rgba(0, 0, 0, 0.8);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 150%;
+      width: 100%;
+      visibility: visible;
+      background-image: url("../img/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position-x: 99%;
+      background-position-y: 25%;
+      background-size: 0.8em;
+      transition: background-position 0.1s ease;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      box-shadow: 0 2px;
+      background: none;
+      visibility: visible;
+
+      &::after {
+        background-position-y: 60%;
+      }
+    }
+  }
+
+  &:visited {
     color: $white;
-    border: 2px solid rgba($white, 0.7);
-    margin: 8px 0;
-    transition: background $base-duration $base-timing;
+  }
 
-    &:visited {
-        color: $white;
-    }
-    &:hover {
-        color: $brand-secondary;
-        background: $white;
-        text-decoration: none;
-    }
-    &:active {
-        background: $white;
-    }
+  &:hover {
+    color: $brand-secondary;
+    background: $white;
+    text-decoration: none;
+  }
 
-    &.button-large {
-        padding: ($base-point-grid * 1.2) ($base-point-grid * 3);
-        font-size: .875rem;
-    }
+  &:active {
+    background: $white;
+  }
+
+  &.button-large {
+    padding: ($base-point-grid * 1.2) ($base-point-grid * 3);
+    font-size: 0.875rem;
+  }
 }

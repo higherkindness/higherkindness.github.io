@@ -1,93 +1,95 @@
-// Content 
+// Content
 // -----------------------------------------------
 // -----------------------------------------------
 #content {
-    background: $white;
-    .features {
-        padding: ($base-point-grid * 10) 0;
-        @include flexbox;
-        .feature-item {
-            
-            &:nth-child(1),
-            &:nth-child(2) {
-                padding-right: ($base-point-grid * 3);
-            }
-            
+  .container-title {
+    margin: 0 0 ($base-point-grid * 8) 0;
+    text-align: center;
 
-            &:nth-child(2) {
-                padding-left: ($base-point-grid * 3);
+    h2 {
+      @include fadeIn($duration: 0.8s, $delay: 0.6s, $function: ease);
 
-            }
-
-            &:nth-child(3) {
-                padding-left: ($base-point-grid * 3);
-
-            }
-
-            @include flex(1);
-            text-align: center;
-            img {
-                margin-bottom: ($base-point-grid * 2);
-                transition: transform 150ms ease-in-out;
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-            h3 {
-                margin-bottom: $base-point-grid;
-                text-transform: uppercase;
-                font-size: 1.067rem;
-                font-weight: $font-semibold;
-                color: $gray-primary;
-            }
-
-            p {
-                color: $gray-secondary;
-            }
-            
-            &:nth-child(1) {
-                @include fadeInDown( 
-                $duration: 1s,
-                $delay: 1s,
-                $function: ease);
-
-            }
-            
-             &:nth-child(2) {
-                @include fadeInDown( 
-                $duration: 1s,
-                $delay: 1.3s,
-                $function: ease);
-
-            }
-            
-             &:nth-child(3) {
-                @include fadeInDown( 
-                $duration: 1s,
-                $delay: 1.6s,
-                $function: ease);
-
-            }
-            
-        }
+      background: rgba(255, 255, 255, 0.7);
+      display: inline;
+      font-size: 1.6rem;
+      font-weight: $font-semibold;
+      color: $gray-primary;
     }
+  }
+
+  .features {
+    margin: 0 0 ($base-point-grid * 10) 0;
+    display: flex;
+
+    .feature-item {
+      img {
+        margin-bottom: ($base-point-grid * 2);
+        transition: transform 150ms ease-in-out;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        padding-right: ($base-point-grid * 3);
+      }
+
+      &:nth-child(1) {
+        @include fadeInDown($duration: 1s, $delay: 1s, $function: ease);
+      }
+
+      &:nth-child(2) {
+        padding-left: ($base-point-grid * 3);
+
+        @include fadeInDown($duration: 1s, $delay: 1.3s, $function: ease);
+      }
+
+      &:nth-child(3) {
+        padding-left: ($base-point-grid * 3);
+
+        @include fadeInDown($duration: 1s, $delay: 1.6s, $function: ease);
+      }
+
+      flex: 1;
+      text-align: center;
+
+      h3 {
+        margin-bottom: $base-point-grid;
+        text-transform: uppercase;
+        font-size: 1.067rem;
+        font-weight: $font-semibold;
+        color: $gray-primary;
+      }
+
+      p {
+        color: $gray-secondary;
+      }
+    }
+  }
 }
 
 // Responsive mode
-@include bp(small) {
-    #content {
-        .features {
-            @include flex-wrap(wrap);
-            .feature-item {
-                @include flex(0 0 100%);
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3) {
-                    padding: 0;
-                }
-                margin-bottom: ($base-point-grid * 5);
-                padding: 0;
-            }
+@include bp(medium) {
+  #content {
+    .features {
+      flex-wrap: wrap;
+
+      .feature-item {
+        flex: 0 0 100%;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          padding: 0;
         }
+
+        margin-bottom: ($base-point-grid * 5);
+        padding: 0;
+      }
     }
+  }
 }

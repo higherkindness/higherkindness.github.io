@@ -2,67 +2,180 @@
 // -----------------------------------------------
 // -----------------------------------------------
 #masthead {
-    background: $brand-secondary;
-    .masthead-content {
-        padding: ($base-point-grid * 10) 0 ($base-point-grid * 12) 0;
-        @include flexbox;
-        @include align-items (center);
-        .masthead-text {
-            @include flex(1); //background: rgba(#456, 0.4);
-            h2 {
-                margin-bottom: ($base-point-grid * 3);
-                font-size: 2.533rem;
-            }
+  margin-top: $navbar-height;
 
-            a {
-                margin-right: $base-point-grid;
-            }
+  .masthead-content {
+    min-height: 600px;
+    padding: ($base-point-grid * 6) 0 ($base-point-grid * 12) 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-            @include fadeInDown( $duration: 1s,
-            $delay: .2s,
-            $function: ease);
+    .masthead-text {
+      flex: 1;
 
-        }
-        .masthead-brand {
-            @include flex(1); //background: rgba(#321, 0.2);
-            max-width: 100%;
+      padding: 0 ($base-point-grid * 4);
 
-            @include fadeInDown( $duration: 1s,
-            $delay: .6s,
-            $function: ease);
-        }
+      h2 {
+        color: $white;
+        margin-bottom: ($base-point-grid * 12);
+        font-size: 3rem;
+        font-weight: $font-bold;
+      }
+
+      a {
+        margin-right: $base-point-grid;
+      }
+
+      @include fadeInDown($duration: 1s, $delay: 0.2s, $function: ease);
     }
+
+    .masthead-brand {
+      flex: 1;
+      max-width: 100%;
+
+      @include fadeInDown($duration: 1s, $delay: 0.6s, $function: ease);
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .masthead-link-container {
+    display: grid;
+    grid-gap: ($base-point-grid * 3);
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .library-container {
+      display: flex;
+      flex-direction: column;
+      min-width: 30%;
+
+      &:nth-child(1) {
+        @include fadeIn($duration: 0.8s, $delay: 0.6s, $function: ease);
+      }
+
+      &:nth-child(2) {
+        @include fadeIn($duration: 0.8s, $delay: 0.9s, $function: ease);
+      }
+
+      &:nth-child(3) {
+        @include fadeIn($duration: 0.8s, $delay: 1.1s, $function: ease);
+      }
+    }
+  }
+
+  .library-icon {
+    flex: 1 1 auto;
+    margin: 0 0 ($base-point-grid * 3);
+    width: auto;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: $white;
+    padding: ($base-point-grid * 2) ($base-point-grid * 2);
+    transition: box-shadow 150ms $base-timing;
+
+    &:visited {
+      color: $white;
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 35px 110px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+
+      .card-cta {
+        &::after {
+          background-position-x: right;
+        }
+      }
+    }
+
+    &:active {
+      background: $white;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: $font-semibold;
+      margin-bottom: $base-point-grid;
+    }
+
+    .card-cta {
+      font-weight: $font-semibold;
+      margin-top: ($base-point-grid * 2);
+      text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        background-image: url("../img/arrow-right.svg");
+        width: 1.5em;
+        height: 99%;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        right: -2em;
+        transition: background-position 0.1s ease;
+      }
+    }
+  }
 }
 
 // Responsive mode
-@include bp(medium) {
-    #masthead {
-
-        .masthead-content {
-            @include flex-wrap(wrap);
-            padding: ($base-point-grid * 8) 0;
-            .masthead-text,
-            .masthead-brand {
-                @include flex(0 0 100%);
-            }
-
-            .masthead-text {
-                @include order(2);
-                text-align: center;
-                h2 {
-                    font-size: 1.8rem;
-                }
-            }
-            .masthead-brand {
-                @include order(1);
-                text-align: center;
-                img {
-                    margin-bottom: ($base-point-grid * 4);
-                    width: 100%;
-                    height: auto;
-                }
-
-            }
-        }
+@include bp(large) {
+  #masthead {
+    .masthead-link-container {
+      grid-template-columns: 1fr;
     }
+
+    .library-icon {
+      height: 150px;
+    }
+
+    .card {
+      min-height: 150px;
+    }
+  }
+}
+
+@include bp(medium) {
+  #masthead {
+    .masthead-content {
+      flex-wrap: wrap;
+      padding: ($base-point-grid * 8) 0;
+
+      .masthead-text,
+      .masthead-brand {
+        flex: 0 0 100%;
+      }
+
+      .masthead-text {
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+
+      .masthead-brand {
+        order: 1;
+        text-align: center;
+
+        img {
+          margin-bottom: ($base-point-grid * 4);
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
